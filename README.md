@@ -1,3 +1,11 @@
-# arabic-text-classification
-# arabic-text-classification
-# arabic-text-classification
+### arabic-text-classification
+
+it's CNN trained with 47000 arabic news articles downloaded from kaggle,divided into 7 categories , culture, finance, medical, politic, religion, sport, tech.  it developed to be core of recommended system.
+
+### summary
+
+
+### quick prediction
+
+
+
