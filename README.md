@@ -10,8 +10,8 @@ it's CNN trained with 47000 arabic news articles downloaded from kaggle, divided
 ```
 pip3 install -r requirements.txt
 ```
-´´´
+```
 python3 example_prediction.py
-´´´
+```
 
 
