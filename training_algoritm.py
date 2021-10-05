@@ -119,4 +119,4 @@ model.summary()
 epochs = 5
 history = model.fit(raw_data_train,validation_data=raw_data_test,epochs=epochs)
 
-model.save("./trained")
+model.save("./model")
