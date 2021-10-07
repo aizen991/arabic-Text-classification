@@ -10,6 +10,8 @@ for x in filenames:
     mystr = '\t'.join([line.strip() for line in lines])	
     f= open(classfolder,'w')
     mystr = re.sub('\W+',' ', mystr)
-    mystr = mystr.replace('\t','')	
+    mystr = mystr.replace('\t','')
+    mystr= re.sub(r'\s*[A-Za-z]+\b', '' , mystr)
+    mystr = mystr.rstrip()	
     f.write(mystr)
    

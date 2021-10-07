@@ -3,7 +3,7 @@ from string import digits
 
 lines_per_file =10
 
-count = 1114
+count = 1354
 smallfile = None
 with open('clean_text') as bigfile:
 
