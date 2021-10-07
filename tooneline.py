@@ -6,6 +6,7 @@ for x in filenames:
     f = open(x, 'r')
     lines = f.readlines()
     mystr = '\t'.join([line.strip() for line in lines])	
-    f= open(x,'w')	
+    f= open(x,'w')
+    mystr = mystr.replace('\t','')	
     f.write(mystr)
    
