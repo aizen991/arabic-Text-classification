@@ -1,4 +1,5 @@
 import os
+import re
 count =0
 filenames = next(os.walk("dataset/low"), (None, None, []))[2]
 for x in filenames:	
@@ -8,6 +9,7 @@ for x in filenames:
     lines = f.readlines()
     mystr = '\t'.join([line.strip() for line in lines])	
     f= open(classfolder,'w')
+    mystr = re.sub('\W+',' ', mystr)
     mystr = mystr.replace('\t','')	
     f.write(mystr)
    
