@@ -3,7 +3,7 @@ from string import digits
 
 lines_per_file =10
 
-count = 1354
+count = 3163
 smallfile = None
 with open('clean_text') as bigfile:
 
@@ -26,7 +26,7 @@ with open('clean_text') as bigfile:
         if lineno % lines_per_file == 0:
             if smallfile:
                 smallfile.close()
-            small_filename = 'dataset/low/{}.txt'.format(count)
+            small_filename = 'dataset/law/{}.txt'.format(count)
             smallfile = open(small_filename, "w")
             count += 1
         smallfile.write(line)
