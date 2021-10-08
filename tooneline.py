@@ -14,4 +14,5 @@ for x in filenames:
     mystr= re.sub(r'\s*[A-Za-z]+\b', '' , mystr)
     mystr = mystr.rstrip()	
     f.write(mystr)
+    
    
