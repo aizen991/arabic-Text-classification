@@ -14,5 +14,10 @@ for x in filenames:
     mystr= re.sub(r'\s*[A-Za-z]+\b', '' , mystr)
     mystr = mystr.rstrip()	
     f.write(mystr)
+    f= open(classfolder, 'r')
+    data = f.read()
+    words = data.split()
+    if (len(words) < 10):
+        os.rename(classfolder)
     
    
