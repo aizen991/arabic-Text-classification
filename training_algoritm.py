@@ -10,8 +10,10 @@ import matplotlib.pyplot as plt
 
 
 seed=42
-data_paths = './dataset'
+data_paths = 'dataset'
 labels=os.listdir(data_paths) 
+
+print(labels)
 raw_data_train = tf.keras.preprocessing.text_dataset_from_directory(
     data_paths,
     labels="inferred",
@@ -93,16 +95,17 @@ vectorize_layer.adapt(train_text)
 model = tf.keras.Sequential([
     vectorize_layer,
     layers.Embedding(max_features + 1, embedding_dim),
-    layers.Dropout(0.3),
+    layers.Dropout(0.2),
     layers.GlobalAveragePooling1D(),
-    layers.Dropout(0.3),
+    layers.Dropout(0.2),
     layers.Dense(128,activation="relu"),
-    layers.Dropout(0.3),
+    layers.Dropout(0.2),
     layers.Dense(8,activation="sigmoid"),
     ])
 
+opt = tf.keras.optimizers.Adam(learning_rate=0.00022)
 model.compile(
-    loss = losses.sparse_categorical_crossentropy, optimizer="adam", metrics=['accuracy']
+    loss = losses.sparse_categorical_crossentropy, optimizer=opt, metrics=['accuracy']
 )
 
 model.summary()
