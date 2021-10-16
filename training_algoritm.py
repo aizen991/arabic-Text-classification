@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 
 
 
+tf.keras.backend.clear_session()
 
 seed=42
 data_paths = 'dataset'
@@ -103,7 +104,7 @@ model = tf.keras.Sequential([
     layers.Dense(8,activation="sigmoid"),
     ])
 
-opt = tf.keras.optimizers.Adam(learning_rate=0.00022)
+opt = tf.keras.optimizers.Adam(learning_rate=0.00025)
 model.compile(
     loss = losses.sparse_categorical_crossentropy, optimizer=opt, metrics=['accuracy']
 )
