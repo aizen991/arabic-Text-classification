@@ -3,13 +3,7 @@ from tensorflow.keras.layers import TextVectorization
 import os
 from tensorflow.keras import losses
 from tensorflow.keras import layers
-
-
-
-
-
-
-
+import matplotlib.pyplot as plt
 
 
 
@@ -99,11 +93,11 @@ vectorize_layer.adapt(train_text)
 model = tf.keras.Sequential([
     vectorize_layer,
     layers.Embedding(max_features + 1, embedding_dim),
-    layers.Dropout(0.2),
+    layers.Dropout(0.3),
     layers.GlobalAveragePooling1D(),
-    layers.Dropout(0.2),
+    layers.Dropout(0.3),
     layers.Dense(128,activation="relu"),
-    layers.Dropout(0.2),
+    layers.Dropout(0.3),
     layers.Dense(8,activation="sigmoid"),
     ])
 
@@ -120,3 +114,19 @@ epochs = 6
 history = model.fit(raw_data_train,validation_data=raw_data_test,epochs=epochs)
 
 model.save("./model")
+
+
+
+
+
+
+def plot_graphs(history, string):
+  plt.plot(history.history[string])
+  plt.plot(history.history['val_'+string])
+  plt.xlabel("Epochs")
+  plt.ylabel(string)
+  plt.legend([string, 'val_'+string])
+  plt.show()
+  
+plot_graphs(history, "accuracy")
+plot_graphs(history, "loss")
