@@ -104,7 +104,7 @@ model = tf.keras.Sequential([
     layers.Dropout(0.2),
     layers.Dense(128,activation="relu"),
     layers.Dropout(0.2),
-    layers.Dense(7,activation="sigmoid"),
+    layers.Dense(8,activation="sigmoid"),
     ])
 
 model.compile(
@@ -116,7 +116,7 @@ model.summary()
 
 
 
-epochs = 5
+epochs = 6
 history = model.fit(raw_data_train,validation_data=raw_data_test,epochs=epochs)
 
 model.save("./model")
