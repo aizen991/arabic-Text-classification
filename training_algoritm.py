@@ -104,7 +104,7 @@ model = tf.keras.Sequential([
     layers.Dense(8,activation="sigmoid"),
     ])
 
-opt = tf.keras.optimizers.Adam(learning_rate=0.00025)
+opt = tf.keras.optimizers.Adam(learning_rate=0.0001)
 model.compile(
     loss = losses.sparse_categorical_crossentropy, optimizer=opt, metrics=['accuracy']
 )
@@ -114,7 +114,7 @@ model.summary()
 
 
 
-epochs = 6
+epochs = 10
 history = model.fit(raw_data_train,validation_data=raw_data_test,epochs=epochs)
 
 model.save("./model")

@@ -10,7 +10,7 @@ add new class 'beauty'
 ### history
 loss            |  accuracy
 :-------------------------:|:-------------------------:
-![alt text](https://github.com/aizen991/conclusion/blob/add-beauty-class/Screenshot%20from%202021-10-16%2013-39-36.png) | ![alt text](https://github.com/aizen991/conclusion/blob/add-beauty-class/Screenshot%20from%202021-10-16%2013-45-55.png)
+![alt text](https://github.com/aizen991/conclusion/blob/add-beauty-class/loss.png) | ![alt text](https://github.com/aizen991/conclusion/blob/add-beauty-class/accurancy.png)
 
 
 
