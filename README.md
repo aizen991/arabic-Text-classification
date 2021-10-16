@@ -4,7 +4,9 @@ Technically we should classify each question/answer before put it in our databas
 ### solution
 respository contain a pretained model and dataset for arabic text classification project, the model will be very useful as core of a recommended system based on text,
 ### what's news 
-add new class 'beauty' 
+- Add new class 'beauty' : add 6500 articles scrapted from www.sayidati.com using selenium.
+- Chnage number of epoches from 6 to 10 and minimize learning rate to 0.0001.
+- add training history images .
 ### summary
 ![alt text](https://github.com/aizen991/arabic-text-classification/blob/main/Screenshot%20from%202021-10-02%2019-07-42.png)
 ### history
