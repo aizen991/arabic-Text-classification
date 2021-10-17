@@ -1,6 +1,6 @@
 ### problem
-Imagine we are going to develop a question/answer application.  We selected Arab native speakers because of lack of competition. Then, we decide to start developing a system that defines users' interests and displays the content relative to them.
-Technically we should classify each question/answer before put it in our database. Then start tracking users to define their interests (for example by collecting their feedbacks on question/answer which already classified) and finally execute the query to get needed content.
+Imagine we are going to develop a question/answer application and we select Arabic native speakers because of lack of competition, then we decide to start developing a system that defines users' interests and displays the content relative to them.
+Technically we should classify each content before put it in our database, after that start tracking users to define their interests,(For example by collecting users' feedbacks on the already classified content), and finally, execute the query to get the needed content.
 ### solution
 respository contain a pre-trained model and dataset for arabic text classification project, the model will be very useful as core of a recommended system based on text,
 ### what's news 
