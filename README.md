@@ -1,6 +1,6 @@
 ### problem
 Imagine we are going to develop a question/answer application.  We selected Arab native speakers because of lack of competition. Then, we decide to start developing a system that defines users' interests and displays the content relative to them.
-Technically we should classify each question/answer before put it in our database. Then start tracking users to define their interests and finally execute the query to get needed content.
+Technically we should classify each question/answer before put it in our database. Then start tracking users to define their interests (for example by collecte their feeds about a question/answer which already classified) and finally execute the query to get needed content.
 ### solution
 respository contain a pretained model and dataset for arabic text classification project, the model will be very useful as core of a recommended system based on text,
 ### what's news 
@@ -23,7 +23,7 @@ loss            |  accuracy
 pip3 install -r requirements.txt
 ```
 ```
-python3 example_prediction.py
+python3 example_prediction.py "أثبتنا أمام السيتي أننا فريق صلب دفاعيا، نعم الانتصار مهم، ولكنه مجرد بداية، ويجب مواصلة العمل بهدوء، وسعداء بالطبع بعودة الجماهير، اللاعب رقم 12، لأنهم يمثلون شغف وطاقة كرة القدم"
 ```
 
 
