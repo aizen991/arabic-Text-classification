@@ -1,11 +1,13 @@
 import tensorflow as tf
 import numpy as np
 import os
+import sys
 
 
 model = tf.keras.models.load_model("model")
 
-prediction_np = model.predict(["يساعد الجوز المليء بمضادات الأكسدة وفيتامين ب على حماية بشرتك من العوامل البيئية الضارة مثل التعرض للشمس والأوساخ والتلوث والشوائب الأخرى، وهذا بدوره يمنع تلف الجلد وظهور الخطوط الدقيقة والتجاعيد المبكرة، بالإضافة إلى ذلك، فإن وجود فيتامين E يرطب بشرتك بشكل مكثف ويعزز إنتاج الكولاجين للحفاظ على بشرتك أكثر شبابًا."])
+
+prediction_np = model.predict([sys.argv[1]])
 print(prediction_np)
 
 prediction = np.argmax(prediction_np[0],axis=0)
