@@ -101,7 +101,7 @@ model = tf.keras.Sequential([
     layers.Dropout(0.2),
     layers.Dense(128,activation="relu"),
     layers.Dropout(0.2),
-    layers.Dense(8,activation="sigmoid"),
+    layers.Dense(9,activation="sigmoid"),
     ])
 
 opt = tf.keras.optimizers.Adam(learning_rate=0.0001)
@@ -114,7 +114,7 @@ model.summary()
 
 
 
-epochs = 10
+epochs = 12
 history = model.fit(raw_data_train,validation_data=raw_data_test,epochs=epochs)
 
 model.save("./model")
