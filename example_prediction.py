@@ -16,5 +16,4 @@ print(prediction)
 class_names =  os.listdir("dataset")
 
 class_names.sort()
-
 print(class_names[prediction],":",prediction_np[0][prediction])
