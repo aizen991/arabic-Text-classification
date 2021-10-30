@@ -1,11 +1,11 @@
 ### problem
 Imagine we are going to develop a question/answer application.  We selected Arab native speakers because of lack of competition. Then, we decide to start developing a system that defines users' interests and displays the content relative to them.
-Technically we should classify each question/answer before put it in our database. Then start tracking users to define their interests (for example by collecte their feeds about a question/answer which already classified) and finally execute the query to get needed content.
+Technically we should classify each question/answer before put it in our database. Then start tracking users to define their interests (for example by collecte their feeds about a question/answer that already classified) and finally execute the query to get needed content.
 ### solution
-respository contain a pretained model and dataset for arabic text classification project, the model will be very useful as core of a recommended system based on text,
+respository contain a pretained model and dataset for arabic text classification project, the model will be  useful as core of a recommended system based on text,
 ### what's news 
-- Add new class 'beauty': add 6500 articles scraped from www.sayidati.com using selenium.
-- Change the number of epochs from 6 to 10 and minimize the learning rate to 0.0001.
+- Add "gaming" class : add 6500 articles scraped from https://www.vga4a.com/ using selenium.
+- Change the number of epochs from 6 to 12 and minimize the learning rate to 0.0001.
 - Add training history images.
 ### summary
 ![alt text](https://github.com/aizen991/arabic-text-classification/blob/main/Screenshot%20from%202021-10-02%2019-07-42.png)
