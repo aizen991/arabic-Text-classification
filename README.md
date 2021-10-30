@@ -4,9 +4,12 @@ Technically we should classify each question/answer before put it in our databas
 ### solution
 respository contain a pretained model and dataset for arabic text classification project, the model will be  useful as core of a recommended system based on text,
 ### what's news 
-- Add "gaming" class : add 6500 articles scraped from https://www.vga4a.com/ using selenium.
+- Add "gaming" cclass : add 6500 articles scraped from https://www.vga4a.com/ using selenium.
 - Change the number of epochs from 6 to 12 and minimize the learning rate to 0.0001.
 - Add training history images.
+
+### classes
+['Beauty', 'Culture', 'Finance', 'Gaming', 'Medical', 'Politics', 'Religion', 'Sports', 'Tech']
 ### summary
 ![alt text](https://github.com/aizen991/arabic-text-classification/blob/main/Screenshot%20from%202021-10-02%2019-07-42.png)
 ### history
