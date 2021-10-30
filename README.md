@@ -12,7 +12,7 @@ respository contain a pretained model and dataset for arabic text classification
 ['Beauty', 'Culture', 'Finance', 'Gaming', 'Medical', 'Politics', 'Religion', 'Sports', 'Tech']
 ### summary
 ![alt text](https://github.com/aizen991/arabic-text-classification/blob/main/Screenshot%20from%202021-10-02%2019-07-42.png)
-### history
+### history 
 loss            |  accuracy
 :-------------------------:|:-------------------------:
 ![alt text](https://github.com/aizen991/conclusion/blob/add-beauty-class/loss.png) | ![alt text](https://github.com/aizen991/conclusion/blob/add-beauty-class/accurancy.png)
